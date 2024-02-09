@@ -148,7 +148,7 @@ p {
 
 .hero-section {
   padding: 272px 0;
-  background-image: url(../images/hero_image.jpeg);
+  background-image: url("../images/hero_image.jpeg");
 
 
 }
