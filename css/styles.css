@@ -1,3 +1,4 @@
+/* ------------------------------------------------------ F O N T S ----------------------------------------------- */
 /* montserrat-alternates-300 - cyrillic_latin */
 @font-face {
   font-display: swap;
@@ -43,7 +44,7 @@
   src: url("../fonts/montserrat-alternates-v17-cyrillic_latin-800.woff2")
     format("woff2");
 }
-/*------------------------------------------------------------------------------------------
+/* ------------------------------------------------------ C O L O R S ----------------------------------------------- */
 /*Colors*/
 :root {
   --color-link-hover: #5ab35b;
@@ -51,7 +52,7 @@
   --color-font-light: #f3f3f3;
   --navigation-background: rgba(49, 38, 26, 0.1);
 }
-/*------------------------------------------------------------------------------------------
+/* ------------------------------------------------------ B A S E   S T Y L E S  ----------------------------------------------- */
 /*Base*/
 body {
   font-family: "Montserrat Alternates";
@@ -61,7 +62,14 @@ body {
   line-height: 1.5; /*Font height(px)/Font size(px)*/
   margin: 0;
 }
+a {
+  color: var(--color-font);
+    text-decoration: none;
+}
 
+a:hover {
+  color: var(--color-link-hover);
+}
 ul {
   list-style-type: none;
 }
@@ -98,11 +106,8 @@ p {
 /*------------------------------------------------------------------------------------------
 
 /*Links*/
-.link {
-  color: var(--color-font);
-  text-decoration: none;
-}
-.link:hover {
+
+.active-link {
   color: var(--color-link-hover);
 }
 /*Buttons*/
@@ -149,6 +154,7 @@ p {
 .hero-section {
   padding: 272px 0;
   background-image: url("../images/hero_image.jpeg");
-
-
+background-repeat: no-repeat;
+background-size:cover;
+background-attachment: fixed;
 }
