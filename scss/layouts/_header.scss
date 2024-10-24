@@ -1,0 +1,47 @@
+.header {
+position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    padding-top: 32px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 25%);
+
+    &__container {
+            display: flex;
+            width: 100%;
+            max-width: 1288px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        justify-content: space-between;
+    }    
+
+    
+
+}
+
+
+.header-nav {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-list {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+}
+

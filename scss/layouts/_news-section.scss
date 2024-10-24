@@ -1,0 +1,24 @@
+.news-section {
+    display: flex;
+    position: relative;
+    padding: 272px 0;
+    background-image: linear-gradient(-198.24deg, rgb(40 73 111 / 80%) 80.03%, rgb(255 255 255 / 100%) 100.36%),
+        url(../images/logo-church.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 65px 65px;
+    color: var(--color-font-light);
+
+    &__button {
+        display: flex;
+        justify-content: right;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+
+    }
+
+}

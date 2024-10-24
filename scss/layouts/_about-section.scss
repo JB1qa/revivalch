@@ -1,0 +1,16 @@
+.about-section {
+    padding: 65px;
+    color: var(--color-font-dark);
+
+
+    &__container {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 100px;
+    }
+
+    &__image {
+        width: 400px;
+        height: 400px;
+    }
+}

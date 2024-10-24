@@ -1,0 +1,27 @@
+.transactions-section {
+    padding: 65px 65px;
+    color: var(--color-font-dark);
+
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        padding: 0;
+    }
+
+    &__card {
+        display: flex;
+        border: 1px solid black;
+        width: 390px;
+        height: 240px;
+
+
+    }
+
+    &__translation {
+        width: 100%;
+        height: 100%;
+
+    }
+}

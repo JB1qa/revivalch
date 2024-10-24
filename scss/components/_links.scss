@@ -1,0 +1,13 @@
+link {
+    color: var(--color-font-light);
+    text-decoration: none;
+}
+
+.active-link,
+.link:hover {
+    color: var(--color-link-hover);
+}
+
+.readmore-link {
+    text-decoration: underline;
+}

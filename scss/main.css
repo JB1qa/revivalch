@@ -1,0 +1,275 @@
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/montserrat-v26-cyrillic_latin-300.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v26-cyrillic_latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v26-cyrillic_latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat-v26-cyrillic_latin-600.woff2") format("woff2");
+}
+/* montserrat-800 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/montserrat-v26-cyrillic_latin-800.woff2") format("woff2");
+}
+/*Colors*/
+:root {
+  --color-link-hover: #b1b1b1;
+  --color-font-dark: #414141;
+  --color-font-light: #ffffff;
+  --navigation-background: rgba(49, 38, 26, 0.1);
+}
+
+body {
+  font-family: "Montserrat";
+  color: var(--color-font);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+}
+
+a {
+  color: var(--color-font-light);
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.button {
+  height: 40px;
+  width: 160px;
+  color: var(--color-font-light);
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 5px;
+}
+.button:hover {
+  box-shadow: 1px 1px 10px white;
+  color: var(--color-font-light);
+}
+
+link {
+  color: var(--color-font-light);
+  text-decoration: none;
+}
+
+.active-link,
+.link:hover {
+  color: var(--color-link-hover);
+}
+
+.readmore-link {
+  text-decoration: underline;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 400;
+  padding-top: 32px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.header__container {
+  display: flex;
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-list {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.hero-section {
+  padding: 272px 0;
+  background-image: url("../images/cross.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+.hero-section__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 650px;
+  height: 200px;
+  color: white;
+  text-shadow: 1px 10px 30px white;
+  margin: 100px 0;
+}
+.hero-section__title .bible-chapter {
+  display: flex;
+  justify-content: end;
+}
+
+.news-section {
+  display: flex;
+  position: relative;
+  padding: 272px 0;
+  background-image: linear-gradient(-198.24deg, rgba(40, 73, 111, 0.8) 80.03%, rgb(255, 255, 255) 100.36%), url(../images/logo-church.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 65px 65px;
+  color: var(--color-font-light);
+}
+.news-section__button {
+  display: flex;
+  justify-content: right;
+}
+.news-section__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.blog-card {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  position: relative;
+  width: 250px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: var(--color-font-light), solid, 2px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px var(--color-font-light);
+  color: var(--color-font-light);
+  padding: 10px;
+  transition: transform 0.3s;
+}
+.blog-card:hover {
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.blog-card__content-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  z-index: 2;
+  opacity: 0.5;
+}
+.blog-card__title {
+  z-index: 3;
+}
+.blog-card__descr {
+  z-index: 3;
+}
+
+.about-section {
+  padding: 65px;
+  color: var(--color-font-dark);
+}
+.about-section__container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 100px;
+}
+.about-section__image {
+  width: 400px;
+  height: 400px;
+}
+
+.transactions-section {
+  padding: 65px 65px;
+  color: var(--color-font-dark);
+}
+.transactions-section__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 0;
+}
+.transactions-section__card {
+  display: flex;
+  border: 1px solid black;
+  width: 390px;
+  height: 240px;
+}
+.transactions-section__translation {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=main.css.map */
